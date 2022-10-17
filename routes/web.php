@@ -34,6 +34,7 @@ Route::middleware('is_admin')->prefix('admin')->group(function() {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/products', [App\Http\Controllers\MerchantProductController::class, 'index'])->name('merchant.products');
+Route::get('/products/{id}', [App\Http\Controllers\MerchantProductController::class, 'show'])->name('merchant.products.show');
 Route::resource('orders', 'App\Http\Controllers\OrderController');
 Route::get('/orders/add-product/{id}', [App\Http\Controllers\OrderController::class, 'addProduct'])->name('orders.addProduct');
 Route::post('/orders/add-product', [App\Http\Controllers\OrderController::class, 'insertProduct'])->name('orders.insertProduct');

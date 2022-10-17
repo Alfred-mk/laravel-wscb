@@ -33,7 +33,7 @@
                                     <td>Ksh. {{ $product->price }}</td>
                                     <td>{{ $product->created_at }}</td>
                                     <td>
-                                        <a class="btn btn-info" href="{{ route('products.show',$product->id)}}">Show</a>
+                                        <a class="btn btn-info" href="{{ route('merchant.products.show',$product->id)}}">Show</a>
                                         <a class="btn btn-primary" href="{{ route('products.show',$product->id)}}">Order</a>
                                     </td>
                                 </tr>

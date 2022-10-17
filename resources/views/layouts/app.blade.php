@@ -68,6 +68,13 @@
                                         Merchants
                                     </a>
                                 </li>
+                            @else
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-light" href="{{ route('merchant.products')}}">
+                                        Products
+                                    </a>
+                                </li>
+
                             @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

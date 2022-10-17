@@ -49,7 +49,7 @@ class MerchantProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('merchant-products.show', compact('product'));
     }
 
     /**
